@@ -5,28 +5,28 @@ body {
   font-family: lato, sans-serif;
 }
 
-.aaa {
+.photo-content {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.photo-content__image {
   width: 100%;
 }
 
-.aaa .more_inf {
+.photo-content__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .photo-content {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.add-form{
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -38,7 +38,7 @@ body {
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.add-form__wrapper {
   display: flex;
 }
 
@@ -138,19 +138,19 @@ li > input[type="text"] {
   width: 226px
 }
 
-button.delete img {
+.todo-tasks__image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.todo-tasks__image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 ul#completed-tasks label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
@@ -159,11 +159,11 @@ ul li input[type="text"] {
   display: none
 }
 
-ul li.editMode input[type="text"] {
+ul li.edit-mode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
   display: none;
 }

@@ -6,21 +6,21 @@
     <link class="link header__link" rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <div class="photo-content">
+    <section class="photo-content">
       <img class ="photo-content__image" src="./eisenhower-matrix.jpg">
       <a class="photo-content__link"
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
-    <div class="add-form">
-      <p class = "add-form__content" id="add-form-id">
+    </section>
+    <section class="add-form">
+      <div class = "add-form__content" id="add-form-id">
         <label class="add-form__label" for="new-task">Add Item</label>
         <div class="add-form__wrapper">
           <input id="new-task" class="task add-form__row add-form__line" type="text">
           <button class="button add-form__button">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="section-header todo-tasks-header">Todo</h3>
       <ul class="list todo-tasks" id="incomplete-tasks">
         <li class="list__item">
@@ -54,7 +54,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>

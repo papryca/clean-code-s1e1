@@ -5,7 +5,7 @@
     <link class="link header__link" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link class="link header__link" rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="photo-content">
       <img class ="photo-content__image" src="./eisenhower-matrix.jpg">
       <a class="photo-content__link"
@@ -15,39 +15,39 @@
     </div>
     <div class="add-form">
       <p class = "add-form__content" id="add-form-id">
-        <label class="label add-form__label" for="new-task">Add Item</label>
+        <label class="add-form__label" for="new-task">Add Item</label>
         <div class="add-form__wrapper">
-          <input id="new-task" class="task add-form__line" type="text">
+          <input id="new-task" class="task add-form__row add-form__line" type="text">
           <button class="button add-form__button">Add</button>
         </div>
       </p>
-      <h3 class="todo-tasks-header">Todo</h3>
-      <ul class="todo-tasks" id="incomplete-tasks">
-        <li>
-          <input class="todo-tasks__line" type="checkbox">
-          <label class="task todo-tasks__label">Pay Bills</label>
-          <input type="text" class="task todo-tasks__line">
+      <h3 class="section-header todo-tasks-header">Todo</h3>
+      <ul class="list todo-tasks" id="incomplete-tasks">
+        <li class="list__item">
+          <input class="todo-tasks__line list__row" type="checkbox">
+          <label class="task list__label todo-tasks__label">Pay Bills</label>
+          <input type="text" class="task add-form__row todo-tasks__line">
           <button class="button button_edit">Edit</button>
           <button class="button button_delete">
             <img class="todo-tasks__image" src="./remove.svg">
           </button>
         </li>
-        <li class="edit-mode">
-          <input class="edit-mode__line" type="checkbox">
-          <label class="task edit-mode__label">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task edit-mode__line-text">
+        <li class="list__item list__item_edit">
+          <input class="edit-mode__line list__row" type="checkbox">
+          <label class="task list__label edit-mode__label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task add-form__row edit-mode__line-text">
           <button class="button button_edit">Save</button>
           <button class="button button_delete">
             <img class="todo-tasks__image" src="./remove.svg">
           </button>
         </li>
       </ul>
-      <h3 class="completed-tasks-header">Completed</h3>
-      <ul class="completed-task" id="completed-tasks">
-        <li>
-          <input class="completed-task__line" type="checkbox" checked>
-          <label class="task completed-task__label">See the Doctor</label>
-          <input type="text" class="task completed-task__line">
+      <h3 class="section-header">Completed</h3>
+      <ul class="list list_competed" id="completed-tasks">
+        <li class="list__item">
+          <input class="completed-task__line list__row" type="checkbox" checked>
+          <label class="task list__label completed-task__label">See the Doctor</label>
+          <input type="text" class="task add-form__row">
           <button class="button button_edit">Edit</button>
           <button class="button button_delete">
             <img class="todo-tasks__image" src="./remove.svg">
